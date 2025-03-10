@@ -12,7 +12,7 @@
   ## Installation
   You'll need to pull down the git repository and run npm i, cd into the client folder, followed by running npm run build, and finally npm run develop. This will spin up your local environment and should take you to the localhost page.
   ## Usage
-  You can click below on recent incidents to pull that customer back up, or search for the customer via social or name to pull up customers. If you can't find a customer you can create a new one. You'll then be able to handle the incident itself and any prior incidents attached to that customer. You can view your current stats by clicking the stats link in the navbar.
+  You can click below on recent incidents to pull that customer back up, or search for the customer via social or name to pull up customers. ![incidents](https://github.com/eslickjr/customerCareIncidents/raw/main/client/src/assets/Incident.png)  If you can't find a customer you can create a new one. You'll then be able to handle the incident itself and any prior incidents attached to that customer. You can view your current stats by clicking the stats link in the navbar. ![stats](https://github.com/eslickjr/customerCareIncidents/raw/main/client/src/assets/Stats.png) 
   ## Contribution
   N/A
   ## Test
