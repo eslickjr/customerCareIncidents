@@ -1,7 +1,7 @@
 # customerCareIncidents
   
   ## Description
-  This allows you to track customers who have recently called in and ties them to any existing accounts they may or may not have. It also supplies stats on resolution times and incidents types for the user to view. ![screenshot](client/src/assets/Customer%20Care%20Incidents%20Dash.png)
+  This allows you to track customers who have recently called in and ties them to any existing accounts they may or may not have. It also supplies stats on resolution times and incidents types for the user to view. ![screenshot](https://github.com/eslickjr/customerCareIncidents/raw/main/client/src/assets/Customer%20Care%20Incidents%20Dash.png)
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
