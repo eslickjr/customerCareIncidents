@@ -1,0 +1,109 @@
+#pmtHistoryTableContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  #pmtHistoryTable {
+    display: table;
+    table-layout: fixed;
+    flex-grow: 1;
+    width: 80%;
+    padding: 30px 20px 30px 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+    border-spacing: 0px;
+  }
+  
+  #pmtHistoryHeader {
+    display: table-header-group;
+    padding: 30px 20px 0 20px;
+    background: #fff;
+    border-radius: 4px 4px 0 0;
+    /*box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;*/
+  }
+  
+  #pmtHistoryBody {
+    display: table-body-group;
+    padding: 0 20px 30px 20px;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    /*box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;*/
+  }
+  
+  #pmtHistoryHeaderRow {
+    display: table-row;
+    border-radius: 4px 4px 0 0;
+  }
+  
+  #pmtDateHeader {
+    border-radius: 4px 0 0 0;
+  }
+
+  #chargeHeader {
+    border-radius: 0 4px 0 0;
+  }
+  
+  #pmtHistoryBody tr:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+  
+  #pmtHistoryBody tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+  }
+  
+  #pmtHistoryBody tr:last-child td:last-child {
+    border-radius: 0 0 4px 0;
+  }
+  
+  #pmtHistoryBody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #pmtHistoryBody tr:hover {
+    background-color: #fafad8;
+    cursor: default;
+  }
+  
+  .pmtHistoryColHeader {
+    display: table-cell;
+    vertical-align: inherit;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    background: #0d478e;
+  }
+  
+  .pmtHistoryData {
+    line-height: 1.5rem;
+    letter-spacing: 0.01071em;
+    display: table-cell;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    font-family: Work Sans !important;
+    color: #000 !important;
+    position: relative;
+    width: calc(100% / 9);
+  }
+  
+  .pmtHistorySpan {
+    display: flex; 
+    align-items: center;  /* Vertically center text */
+    justify-content: flex-start;
+  }
+
+  .pmtHistoryColHeader .pmtHistorySpan {
+    line-height: 1.5rem;
+    letter-spacing: 0.01071em;
+    text-align: left;
+    padding: 16px;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    font-family: Work Sans !important;
+    color: #fff !important;
+  }

@@ -1,0 +1,141 @@
+#customerAccount {
+  background-color: #f5f5f5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#incTitle {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 2vh 35px;
+  font-weight: 500;
+  font-family: Work Sans !important;
+}
+
+#historyTitle {
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 2vh 35px;
+  font-weight: 500;
+  font-family: Work Sans !important;
+}
+
+#incTabsContainer, #loanTabsContainer {
+  width: calc(93vw + 40px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.tab {
+  display: inline-block;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  outline: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 4px 4px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.deselected {
+  color: white;
+  background-color: rgb(25, 118, 210);
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  z-index: 1;
+}
+
+#incTab.deselected, #loanTab.deselected {
+  padding-right: 15px;
+  border-right: 1px solid #000;
+}
+
+#incHistoryTab.deselected, #loanHistoryTab.deselected {
+  padding-left: 15px;
+  border-left: 1px solid #000;
+}
+
+.deselected:hover {
+  background-color: rgb(21, 101, 192);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+}
+
+.deselected:active {
+  background-color: rgb(17, 82, 147);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+}
+
+.selected {
+  color: black;
+  background-color: white;
+  cursor: default;
+  z-index: 3;
+  position: relative;
+  border-bottom: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, 
+              rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, 
+              rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+
+#loanTab.selected::before, #incTab.selected::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: -3px;
+  bottom: -8px; 
+  background-color: white;
+  z-index: 1;
+}
+
+#loanHistoryTab.selected::before, #incHistoryTab.selected::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -3px;
+  right: -3px;
+  bottom: -8px; 
+  background-color: white;
+  z-index: 1;
+}
+
+.selected::after {
+  content: "";
+  position: absolute;
+  top: 98%;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  background-color: white;
+  z-index: 2;
+}
+
+#incContainer, #historyTable, #loanContainer, #loanHistoryTable {
+  z-index: 2;
+  border-radius: 0 4px 4px 4px;
+}

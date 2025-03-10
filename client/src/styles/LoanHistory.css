@@ -1,0 +1,139 @@
+#loanHistoryTableContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  #loanHistoryTable {
+    display: table;
+    table-layout: fixed;
+    flex-grow: 1;
+    width: calc(93vw + 40px);
+    padding: 30px 20px 30px 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+    border-spacing: 0px;
+  }
+  
+  #historyHeader {
+    display: table-header-group;
+    padding: 30px 20px 0 20px;
+    background: #fff;
+    border-radius: 4px 4px 0 0;
+    /*box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;*/
+  }
+  
+  #historyBody {
+    display: table-body-group;
+    padding: 0 20px 30px 20px;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    /*box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;*/
+  }
+  
+  #historyHeaderRow {
+    display: table-row;
+    border-radius: 4px 4px 0 0;
+  }
+  
+  #dateHeader {
+    border-radius: 4px 0 0 0;
+  }
+  
+  #offHeader {
+    border-radius: 0 4px 0 0;
+  }
+  
+  #historyBody tr:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+  
+  #historyBody tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+  }
+  
+  #historyBody tr:last-child td:last-child {
+    border-radius: 0 0 4px 0;
+  }
+  
+  #historyBody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #historyBody tr:hover {
+    background-color: #fafad8;
+    cursor: pointer;
+  }
+  
+  .historyColHeader {
+    line-height: 1.5rem;
+    letter-spacing: 0.01071em;
+    display: table-cell;
+    vertical-align: inherit;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    text-align: left;
+    padding: 16px;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    font-family: Work Sans !important;
+    background: #0d478e;
+    color: #fff !important;
+  }
+  
+  .historyData {
+    line-height: 1.5rem;
+    letter-spacing: 0.01071em;
+    display: table-cell;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+    font-family: Work Sans !important;
+    color: #000 !important;
+    position: relative;
+    height: 100%;
+  }
+  
+  .historyDate {
+    width: calc((100% / 8 / 6) * 4)
+  }
+  
+  .historyBr {
+    width: calc(100% / 8 / 3)
+  }
+  
+  .historyAcc {
+    width: calc(100% / 8 / 2)
+  }
+  
+  .historyADSpan {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: auto;
+  }
+  
+  .historyBrSpan, .historyAccSpan, .historyPhoneSpan {
+    white-space: nowrap;
+    overflow: auto;
+    text-overflow: clip;
+  }
+  
+  .historyNameSpan, .historyIssueSpan, .historyActSpan, .historyDateSpan {
+    white-space: normal;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    overflow: auto;
+    text-overflow: clip;
+  }
+  
+  .historySpan {
+    display: flex; 
+    align-items: center;  /* Vertically center text */
+    justify-content: flex-start;
+  }

@@ -1,0 +1,100 @@
+#outerLoanContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#loanContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 93vw;
+    padding: 30px 20px 30px 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+}
+
+#loanInformationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#loanContainer p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0a366b;
+    margin: 10px;
+}
+
+#loanContainer span {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px;
+}
+
+#loanInformationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.broadInfoContainer {
+    width: 33%;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.infoContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#loanInfoContainer {
+    border-left: 2px solid rgb(201, 201, 201);
+    border-right: 2px solid rgb(201, 201, 201); 
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.loanInfoTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+
+.loanInfoTitle {
+    font-size: large;
+    font-weight: 700;
+    color: #5783b9;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(201, 201, 201);
+}
+
+#pmtHistoryTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 20px;
+    border-top: 2px solid rgb(201, 201, 201);
+}
+
+#pmtHistoryTitle {
+    margin-left: 20px;
+    font-size: large;
+    font-weight: 700;
+}

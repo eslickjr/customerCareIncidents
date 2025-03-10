@@ -1,0 +1,54 @@
+#navContainer {
+    background: #fff;
+    border-bottom: 1px solid #e8eaed;
+    padding: 5px 24px;
+    margin-bottom: 30px;
+  }
+  
+  #navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #navbar a {
+    display: block;
+    color: #888;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    padding: 7px;
+    border-bottom: solid 4px #fff;
+    text-decoration: none;
+  }
+  
+  #logo {
+    height: 40px;
+    width: 40px;
+    margin-top: 4px;
+  }
+  
+  .home {
+    color: #367bd0 !important;
+    font-weight: 500 !important;
+  }
+  
+  #userStats {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  #statsLink:hover {
+    border-bottom: solid 4px #0D478E !important;
+  }
+  
+  #userStats:hover #statsLink {
+    font-weight: initial;
+    color: #000;
+  }
